@@ -30,7 +30,7 @@ class App extends Component {
 // Run after our component first appears on screen
   componentDidMount() {
     // Load projects from API
-    fetch('/projects')
+    fetch('api/projects')
     // Parsing the JSON into into Javascript objects
     .then(res => res.json())
     // Update our component's state with the loaded projects
